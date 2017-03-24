@@ -9,10 +9,45 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>OrlandoParkingWatch (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>OrlandoParkingWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>426CAB3F1E83418400D06A13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>426CAB591E840ADC00D06A13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>426CAB681E840B1400D06A13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>426CAB9C1E8429E000D06A13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>426CABAF1E842B3200D06A13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>426CABC51E844AE600D06A13</key>
 		<dict>
 			<key>primary</key>
 			<true/>
