@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		421BFBDE1E855BE30009A5E9 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 421BFBDD1E855BE30009A5E9 /* keys.plist */; };
+		421BFC3B1E85DBF50009A5E9 /* OPRequestService.h in Headers */ = {isa = PBXBuildFile; fileRef = 421BFC391E85DBF50009A5E9 /* OPRequestService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421BFC3E1E85DBF50009A5E9 /* OPRequestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421BFC371E85DBF50009A5E9 /* OPRequestService.framework */; };
+		421BFC3F1E85DBF50009A5E9 /* OPRequestService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 421BFC371E85DBF50009A5E9 /* OPRequestService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		421BFC4F1E85DC170009A5E9 /* OPRequestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421BFC481E85DC170009A5E9 /* OPRequestService.framework */; };
+		421BFC501E85DC170009A5E9 /* OPRequestService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 421BFC481E85DC170009A5E9 /* OPRequestService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		421BFC541E85DCB20009A5E9 /* OPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB8E1E840C1700D06A13 /* OPRequestManager.swift */; };
+		421BFC551E85DCB30009A5E9 /* OPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB8E1E840C1700D06A13 /* OPRequestManager.swift */; };
+		421BFC561E85DCB90009A5E9 /* OPEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB911E84111A00D06A13 /* OPEvent.swift */; };
+		421BFC571E85DCB90009A5E9 /* OPEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB911E84111A00D06A13 /* OPEvent.swift */; };
+		421BFC581E85DE540009A5E9 /* OPRequestService.h in Headers */ = {isa = PBXBuildFile; fileRef = 421BFC391E85DBF50009A5E9 /* OPRequestService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421BFC591E85E1DD0009A5E9 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB941E84208600D06A13 /* DateExtensions.swift */; };
+		421BFC5A1E85E1DD0009A5E9 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB941E84208600D06A13 /* DateExtensions.swift */; };
+		421BFC5E1E85E3950009A5E9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BFC5D1E85E3950009A5E9 /* Secrets.swift */; };
+		421BFC5F1E85E3950009A5E9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BFC5D1E85E3950009A5E9 /* Secrets.swift */; };
 		426CAB441E83418400D06A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB431E83418400D06A13 /* AppDelegate.swift */; };
 		426CAB461E83418400D06A13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB451E83418400D06A13 /* ViewController.swift */; };
 		426CAB491E83418400D06A13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426CAB471E83418400D06A13 /* Main.storyboard */; };
@@ -22,19 +35,27 @@
 		426CAB811E840B1400D06A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426CAB801E840B1400D06A13 /* Assets.xcassets */; };
 		426CAB851E840B1400D06A13 /* OrlandoParkingWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 426CAB691E840B1400D06A13 /* OrlandoParkingWatch.app */; };
 		426CAB991E8427D900D06A13 /* EventRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB981E8427D900D06A13 /* EventRowController.swift */; };
-		426CABD41E846E9D00D06A13 /* OPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB8E1E840C1700D06A13 /* OPRequestManager.swift */; };
-		426CABD51E846E9F00D06A13 /* OPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB8E1E840C1700D06A13 /* OPRequestManager.swift */; };
-		426CABD61E846EA400D06A13 /* OPEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB911E84111A00D06A13 /* OPEvent.swift */; };
-		426CABD71E846EA600D06A13 /* OPEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB911E84111A00D06A13 /* OPEvent.swift */; };
-		426CABD81E846EAC00D06A13 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB941E84208600D06A13 /* DateExtensions.swift */; };
-		426CABD91E846EAE00D06A13 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB941E84208600D06A13 /* DateExtensions.swift */; };
-		426CABDA1E847EA100D06A13 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 426CAB961E84213300D06A13 /* keys.plist */; };
-		426CABDB1E847EA200D06A13 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 426CAB961E84213300D06A13 /* keys.plist */; };
-		68767C0663ED3FF07434E92F /* Pods_OrlandoParkingWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DFCE4C1F7413F91E63D58B /* Pods_OrlandoParkingWatch_Extension.framework */; };
-		B06435D26A68E6A4ED612D37 /* Pods_OrlandoParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A66594818D809FBCBBD13DC /* Pods_OrlandoParking.framework */; };
+		89557132C75BE1F181981D75 /* Pods_OPRequestService_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C6BB56CDC76F243F455CE8 /* Pods_OPRequestService_Watch.framework */; };
+		8E833D98D31071CDED5140F1 /* Pods_OrlandoParkingWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39A7126456EB5AC213C8B24 /* Pods_OrlandoParkingWatch_Extension.framework */; };
+		A77F221FD2BBA5C539591D5F /* Pods_OrlandoParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA920D38B51FA28F881D33AA /* Pods_OrlandoParking.framework */; };
+		F6AB8E11E900F68793076BB0 /* Pods_OPRequestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F80D7A3E6F28D7BEF59C21D /* Pods_OPRequestService.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		421BFC3C1E85DBF50009A5E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 426CAB381E83418400D06A13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 421BFC361E85DBF50009A5E9;
+			remoteInfo = OPRequestService;
+		};
+		421BFC4D1E85DC170009A5E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 426CAB381E83418400D06A13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 421BFC471E85DC170009A5E9;
+			remoteInfo = "OPRequestService Watch";
+		};
 		426CAB771E840B1400D06A13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 426CAB381E83418400D06A13 /* Project object */;
@@ -58,6 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				421BFC3F1E85DBF50009A5E9 /* OPRequestService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +112,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				421BFC501E85DC170009A5E9 /* OPRequestService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,9 +120,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1B4CC3FA0654E1E2ABEBC885 /* Pods-OrlandoParkingWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParkingWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParkingWatch Extension/Pods-OrlandoParkingWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		317869D4AD5DA1900A93F2CE /* Pods-OrlandoParkingWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParkingWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParkingWatch Extension/Pods-OrlandoParkingWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
-		421BFBDD1E855BE30009A5E9 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = keys.plist; path = OPRequestService/keys.plist; sourceTree = SOURCE_ROOT; };
+		030D0E6C70E8535044A6210F /* Pods-OPRequestService Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPRequestService Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OPRequestService Watch/Pods-OPRequestService Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		283306A2785DA62EEACF0B6B /* Pods-OrlandoParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParking/Pods-OrlandoParking.debug.xcconfig"; sourceTree = "<group>"; };
+		2DA013E0CB03A96EEAC5E334 /* Pods-OrlandoParkingWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParkingWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParkingWatch Extension/Pods-OrlandoParkingWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		32C6BB56CDC76F243F455CE8 /* Pods_OPRequestService_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OPRequestService_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421BFC371E85DBF50009A5E9 /* OPRequestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OPRequestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421BFC391E85DBF50009A5E9 /* OPRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPRequestService.h; sourceTree = "<group>"; };
+		421BFC3A1E85DBF50009A5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421BFC481E85DC170009A5E9 /* OPRequestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OPRequestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421BFC5D1E85E3950009A5E9 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		426CAB401E83418400D06A13 /* OrlandoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrlandoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426CAB431E83418400D06A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		426CAB451E83418400D06A13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,27 +146,43 @@
 		426CAB7E1E840B1400D06A13 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		426CAB801E840B1400D06A13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		426CAB821E840B1400D06A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		426CAB8E1E840C1700D06A13 /* OPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OPRequestManager.swift; path = ../OPRequestService/OPRequestManager.swift; sourceTree = "<group>"; };
+		426CAB8E1E840C1700D06A13 /* OPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPRequestManager.swift; sourceTree = "<group>"; };
 		426CAB911E84111A00D06A13 /* OPEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OPEvent.swift; path = Model/OPEvent.swift; sourceTree = "<group>"; };
 		426CAB941E84208600D06A13 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtensions.swift; path = Extensions/DateExtensions.swift; sourceTree = "<group>"; };
-		426CAB961E84213300D06A13 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = keys.plist; path = ../OPRequestService/keys.plist; sourceTree = "<group>"; };
 		426CAB981E8427D900D06A13 /* EventRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRowController.swift; sourceTree = "<group>"; };
-		475D6C555383C455AC558169 /* Pods_OPRequestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OPRequestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5076BB986F1887E81D2481BD /* Pods_OrlandoParkingWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrlandoParkingWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A66594818D809FBCBBD13DC /* Pods_OrlandoParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrlandoParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C0B15EE1579DB23A7164289 /* Pods-OPRequestService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPRequestService.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPRequestService/Pods-OPRequestService.release.xcconfig"; sourceTree = "<group>"; };
-		9351396F180779218ADB50DC /* Pods-OrlandoParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParking.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParking/Pods-OrlandoParking.release.xcconfig"; sourceTree = "<group>"; };
-		9F0ED6F514201D286A89E5E5 /* Pods-OPRequestService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPRequestService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OPRequestService/Pods-OPRequestService.debug.xcconfig"; sourceTree = "<group>"; };
-		D217A5BF9190BC9907EFC80D /* Pods-OrlandoParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParking/Pods-OrlandoParking.debug.xcconfig"; sourceTree = "<group>"; };
-		F5DFCE4C1F7413F91E63D58B /* Pods_OrlandoParkingWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrlandoParkingWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD6147DBA4BE6AC4C9B4A03 /* Pods-OrlandoParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParking.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParking/Pods-OrlandoParking.release.xcconfig"; sourceTree = "<group>"; };
+		8F80D7A3E6F28D7BEF59C21D /* Pods_OPRequestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OPRequestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA920D38B51FA28F881D33AA /* Pods_OrlandoParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrlandoParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEADB654A25CE7A2B5A0AB16 /* Pods-OPRequestService Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPRequestService Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPRequestService Watch/Pods-OPRequestService Watch.release.xcconfig"; sourceTree = "<group>"; };
+		C39A7126456EB5AC213C8B24 /* Pods_OrlandoParkingWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrlandoParkingWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F702DDEE18F7D13CC2FA8A /* Pods-OrlandoParkingWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParkingWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParkingWatch Extension/Pods-OrlandoParkingWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		E18FE24EC3720A748D2775E1 /* Pods-OPRequestService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPRequestService.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPRequestService/Pods-OPRequestService.release.xcconfig"; sourceTree = "<group>"; };
+		EB38ED26FF71A4BC2DBDAAEB /* Pods-OPRequestService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPRequestService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OPRequestService/Pods-OPRequestService.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		421BFC331E85DBF50009A5E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AB8E11E900F68793076BB0 /* Pods_OPRequestService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421BFC441E85DC170009A5E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89557132C75BE1F181981D75 /* Pods_OPRequestService_Watch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		426CAB3D1E83418400D06A13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B06435D26A68E6A4ED612D37 /* Pods_OrlandoParking.framework in Frameworks */,
+				421BFC3E1E85DBF50009A5E9 /* OPRequestService.framework in Frameworks */,
+				A77F221FD2BBA5C539591D5F /* Pods_OrlandoParking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +190,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68767C0663ED3FF07434E92F /* Pods_OrlandoParkingWatch_Extension.framework in Frameworks */,
+				421BFC4F1E85DC170009A5E9 /* OPRequestService.framework in Frameworks */,
+				8E833D98D31071CDED5140F1 /* Pods_OrlandoParkingWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,17 +205,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ADF7EA3316563951C634FD1 /* Pods */ = {
+		2EF816B2F824239CF3D11143 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D217A5BF9190BC9907EFC80D /* Pods-OrlandoParking.debug.xcconfig */,
-				9351396F180779218ADB50DC /* Pods-OrlandoParking.release.xcconfig */,
-				9F0ED6F514201D286A89E5E5 /* Pods-OPRequestService.debug.xcconfig */,
-				8C0B15EE1579DB23A7164289 /* Pods-OPRequestService.release.xcconfig */,
-				1B4CC3FA0654E1E2ABEBC885 /* Pods-OrlandoParkingWatch Extension.debug.xcconfig */,
-				317869D4AD5DA1900A93F2CE /* Pods-OrlandoParkingWatch Extension.release.xcconfig */,
+				8F80D7A3E6F28D7BEF59C21D /* Pods_OPRequestService.framework */,
+				BA920D38B51FA28F881D33AA /* Pods_OrlandoParking.framework */,
+				C39A7126456EB5AC213C8B24 /* Pods_OrlandoParkingWatch_Extension.framework */,
+				32C6BB56CDC76F243F455CE8 /* Pods_OPRequestService_Watch.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		421BFC381E85DBF50009A5E9 /* OPRequestService */ = {
+			isa = PBXGroup;
+			children = (
+				426CAB931E84206D00D06A13 /* Extensions */,
+				426CAB901E84110700D06A13 /* Model */,
+				426CAB8E1E840C1700D06A13 /* OPRequestManager.swift */,
+				421BFC5D1E85E3950009A5E9 /* Secrets.swift */,
+				421BFC391E85DBF50009A5E9 /* OPRequestService.h */,
+				421BFC3A1E85DBF50009A5E9 /* Info.plist */,
+			);
+			path = OPRequestService;
 			sourceTree = "<group>";
 		};
 		426CAB371E83418400D06A13 = {
@@ -178,9 +235,10 @@
 				426CAB421E83418400D06A13 /* OrlandoParking */,
 				426CAB6A1E840B1400D06A13 /* OrlandoParkingWatch */,
 				426CAB791E840B1400D06A13 /* OrlandoParkingWatch Extension */,
+				421BFC381E85DBF50009A5E9 /* OPRequestService */,
 				426CAB411E83418400D06A13 /* Products */,
-				0ADF7EA3316563951C634FD1 /* Pods */,
-				D60E6F61CDAA359BF3B977D4 /* Frameworks */,
+				A575D642AFCA6AD73D6E30FB /* Pods */,
+				2EF816B2F824239CF3D11143 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +248,8 @@
 				426CAB401E83418400D06A13 /* OrlandoParking.app */,
 				426CAB691E840B1400D06A13 /* OrlandoParkingWatch.app */,
 				426CAB751E840B1400D06A13 /* OrlandoParkingWatch Extension.appex */,
+				421BFC371E85DBF50009A5E9 /* OPRequestService.framework */,
+				421BFC481E85DC170009A5E9 /* OPRequestService.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,15 +257,12 @@
 		426CAB421E83418400D06A13 /* OrlandoParking */ = {
 			isa = PBXGroup;
 			children = (
-				426CABD31E846D6200D06A13 /* OPRequestService */,
-				426CAB931E84206D00D06A13 /* Extensions */,
 				426CAB431E83418400D06A13 /* AppDelegate.swift */,
 				426CAB451E83418400D06A13 /* ViewController.swift */,
 				426CAB471E83418400D06A13 /* Main.storyboard */,
 				426CAB4A1E83418400D06A13 /* Assets.xcassets */,
 				426CAB4C1E83418500D06A13 /* LaunchScreen.storyboard */,
 				426CAB4F1E83418500D06A13 /* Info.plist */,
-				426CAB961E84213300D06A13 /* keys.plist */,
 			);
 			path = OrlandoParking;
 			sourceTree = "<group>";
@@ -239,7 +296,6 @@
 				426CAB911E84111A00D06A13 /* OPEvent.swift */,
 			);
 			name = Model;
-			path = ../OPRequestService;
 			sourceTree = "<group>";
 		};
 		426CAB931E84206D00D06A13 /* Extensions */ = {
@@ -248,50 +304,103 @@
 				426CAB941E84208600D06A13 /* DateExtensions.swift */,
 			);
 			name = Extensions;
-			path = ../OPRequestService;
 			sourceTree = "<group>";
 		};
-		426CABD31E846D6200D06A13 /* OPRequestService */ = {
+		A575D642AFCA6AD73D6E30FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				426CAB901E84110700D06A13 /* Model */,
-				426CAB8E1E840C1700D06A13 /* OPRequestManager.swift */,
-				421BFBDD1E855BE30009A5E9 /* keys.plist */,
+				EB38ED26FF71A4BC2DBDAAEB /* Pods-OPRequestService.debug.xcconfig */,
+				E18FE24EC3720A748D2775E1 /* Pods-OPRequestService.release.xcconfig */,
+				283306A2785DA62EEACF0B6B /* Pods-OrlandoParking.debug.xcconfig */,
+				8BD6147DBA4BE6AC4C9B4A03 /* Pods-OrlandoParking.release.xcconfig */,
+				2DA013E0CB03A96EEAC5E334 /* Pods-OrlandoParkingWatch Extension.debug.xcconfig */,
+				D4F702DDEE18F7D13CC2FA8A /* Pods-OrlandoParkingWatch Extension.release.xcconfig */,
+				030D0E6C70E8535044A6210F /* Pods-OPRequestService Watch.debug.xcconfig */,
+				BEADB654A25CE7A2B5A0AB16 /* Pods-OPRequestService Watch.release.xcconfig */,
 			);
-			name = OPRequestService;
-			sourceTree = "<group>";
-		};
-		D60E6F61CDAA359BF3B977D4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7A66594818D809FBCBBD13DC /* Pods_OrlandoParking.framework */,
-				475D6C555383C455AC558169 /* Pods_OPRequestService.framework */,
-				F5DFCE4C1F7413F91E63D58B /* Pods_OrlandoParkingWatch_Extension.framework */,
-				5076BB986F1887E81D2481BD /* Pods_OrlandoParkingWatch.framework */,
-			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		421BFC341E85DBF50009A5E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421BFC3B1E85DBF50009A5E9 /* OPRequestService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421BFC451E85DC170009A5E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421BFC581E85DE540009A5E9 /* OPRequestService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		421BFC361E85DBF50009A5E9 /* OPRequestService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421BFC401E85DBF50009A5E9 /* Build configuration list for PBXNativeTarget "OPRequestService" */;
+			buildPhases = (
+				B1F8DEDE2F6D42E89EE9F3E8 /* [CP] Check Pods Manifest.lock */,
+				421BFC321E85DBF50009A5E9 /* Sources */,
+				421BFC331E85DBF50009A5E9 /* Frameworks */,
+				421BFC341E85DBF50009A5E9 /* Headers */,
+				421BFC351E85DBF50009A5E9 /* Resources */,
+				EAF3B1DD1A201575EF6C7C66 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OPRequestService;
+			productName = OPRequestService;
+			productReference = 421BFC371E85DBF50009A5E9 /* OPRequestService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		421BFC471E85DC170009A5E9 /* OPRequestService Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421BFC511E85DC170009A5E9 /* Build configuration list for PBXNativeTarget "OPRequestService Watch" */;
+			buildPhases = (
+				2CFBD8DD49F427A5B75832CF /* [CP] Check Pods Manifest.lock */,
+				421BFC431E85DC170009A5E9 /* Sources */,
+				421BFC441E85DC170009A5E9 /* Frameworks */,
+				421BFC451E85DC170009A5E9 /* Headers */,
+				421BFC461E85DC170009A5E9 /* Resources */,
+				F062363AB2779226218E5725 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OPRequestService Watch";
+			productName = "OPRequestService Watch";
+			productReference = 421BFC481E85DC170009A5E9 /* OPRequestService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		426CAB3F1E83418400D06A13 /* OrlandoParking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 426CAB521E83418500D06A13 /* Build configuration list for PBXNativeTarget "OrlandoParking" */;
 			buildPhases = (
-				D48A5BFF5C177A8EB67B4F0A /* [CP] Check Pods Manifest.lock */,
+				905A1204418A07E85D64E07E /* [CP] Check Pods Manifest.lock */,
 				426CAB3C1E83418400D06A13 /* Sources */,
 				426CAB3D1E83418400D06A13 /* Frameworks */,
 				426CAB3E1E83418400D06A13 /* Resources */,
-				FE88897B88C3800FCF352C0C /* [CP] Embed Pods Frameworks */,
-				ED6F55E9AB204F0E4C186C39 /* [CP] Copy Pods Resources */,
 				426CAB661E840ADC00D06A13 /* Embed Frameworks */,
 				426CAB8D1E840B1400D06A13 /* Embed Watch Content */,
+				83AE38158155578572F0AD3E /* [CP] Embed Pods Frameworks */,
+				C18DCE02D1377329BF9EC1A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				426CAB841E840B1400D06A13 /* PBXTargetDependency */,
+				421BFC3D1E85DBF50009A5E9 /* PBXTargetDependency */,
 			);
 			name = OrlandoParking;
 			productName = OrlandoParking;
@@ -320,17 +429,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 426CAB861E840B1400D06A13 /* Build configuration list for PBXNativeTarget "OrlandoParkingWatch Extension" */;
 			buildPhases = (
-				837E3212C06FA03F8675CB3D /* [CP] Check Pods Manifest.lock */,
+				4D33C416B4784723A787DF53 /* [CP] Check Pods Manifest.lock */,
 				426CAB711E840B1400D06A13 /* Sources */,
 				426CAB721E840B1400D06A13 /* Frameworks */,
 				426CAB731E840B1400D06A13 /* Resources */,
 				426CABD21E844AE600D06A13 /* Embed Frameworks */,
-				3A3C6EF12314B69F4528092E /* [CP] Embed Pods Frameworks */,
-				8B4DD0D3DF447B550D559B32 /* [CP] Copy Pods Resources */,
+				6AACA13C92FB58D5ADB05884 /* [CP] Embed Pods Frameworks */,
+				F84CD6EC11570423BC6814EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				421BFC4E1E85DC170009A5E9 /* PBXTargetDependency */,
 			);
 			name = "OrlandoParkingWatch Extension";
 			productName = "OrlandoParkingWatch Extension";
@@ -347,6 +457,14 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = WERUreo;
 				TargetAttributes = {
+					421BFC361E85DBF50009A5E9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					421BFC471E85DC170009A5E9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
 					426CAB3F1E83418400D06A13 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4X359D924E;
@@ -380,17 +498,31 @@
 				426CAB3F1E83418400D06A13 /* OrlandoParking */,
 				426CAB681E840B1400D06A13 /* OrlandoParkingWatch */,
 				426CAB741E840B1400D06A13 /* OrlandoParkingWatch Extension */,
+				421BFC361E85DBF50009A5E9 /* OPRequestService */,
+				421BFC471E85DC170009A5E9 /* OPRequestService Watch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		421BFC351E85DBF50009A5E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421BFC461E85DC170009A5E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		426CAB3E1E83418400D06A13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421BFBDE1E855BE30009A5E9 /* keys.plist in Resources */,
-				426CABDA1E847EA100D06A13 /* keys.plist in Resources */,
 				426CAB4E1E83418500D06A13 /* LaunchScreen.storyboard in Resources */,
 				426CAB4B1E83418400D06A13 /* Assets.xcassets in Resources */,
 				426CAB491E83418400D06A13 /* Main.storyboard in Resources */,
@@ -410,7 +542,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				426CABDB1E847EA200D06A13 /* keys.plist in Resources */,
 				426CAB811E840B1400D06A13 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +549,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A3C6EF12314B69F4528092E /* [CP] Embed Pods Frameworks */ = {
+		2CFBD8DD49F427A5B75832CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D33C416B4784723A787DF53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6AACA13C92FB58D5ADB05884 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -433,67 +594,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoParkingWatch Extension/Pods-OrlandoParkingWatch Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		837E3212C06FA03F8675CB3D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8B4DD0D3DF447B550D559B32 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoParkingWatch Extension/Pods-OrlandoParkingWatch Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D48A5BFF5C177A8EB67B4F0A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		ED6F55E9AB204F0E4C186C39 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoParking/Pods-OrlandoParking-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE88897B88C3800FCF352C0C /* [CP] Embed Pods Frameworks */ = {
+		83AE38158155578572F0AD3E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,17 +609,126 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoParking/Pods-OrlandoParking-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		905A1204418A07E85D64E07E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1F8DEDE2F6D42E89EE9F3E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C18DCE02D1377329BF9EC1A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoParking/Pods-OrlandoParking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF3B1DD1A201575EF6C7C66 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OPRequestService/Pods-OPRequestService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F062363AB2779226218E5725 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OPRequestService Watch/Pods-OPRequestService Watch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F84CD6EC11570423BC6814EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoParkingWatch Extension/Pods-OrlandoParkingWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		421BFC321E85DBF50009A5E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421BFC551E85DCB30009A5E9 /* OPRequestManager.swift in Sources */,
+				421BFC5E1E85E3950009A5E9 /* Secrets.swift in Sources */,
+				421BFC561E85DCB90009A5E9 /* OPEvent.swift in Sources */,
+				421BFC591E85E1DD0009A5E9 /* DateExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421BFC431E85DC170009A5E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421BFC541E85DCB20009A5E9 /* OPRequestManager.swift in Sources */,
+				421BFC5F1E85E3950009A5E9 /* Secrets.swift in Sources */,
+				421BFC571E85DCB90009A5E9 /* OPEvent.swift in Sources */,
+				421BFC5A1E85E1DD0009A5E9 /* DateExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		426CAB3C1E83418400D06A13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				426CAB461E83418400D06A13 /* ViewController.swift in Sources */,
-				426CABD81E846EAC00D06A13 /* DateExtensions.swift in Sources */,
-				426CABD61E846EA400D06A13 /* OPEvent.swift in Sources */,
-				426CABD41E846E9D00D06A13 /* OPRequestManager.swift in Sources */,
 				426CAB441E83418400D06A13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,19 +737,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				426CABD91E846EAE00D06A13 /* DateExtensions.swift in Sources */,
 				426CAB7D1E840B1400D06A13 /* ExtensionDelegate.swift in Sources */,
-				426CABD71E846EA600D06A13 /* OPEvent.swift in Sources */,
 				426CAB991E8427D900D06A13 /* EventRowController.swift in Sources */,
 				426CAB7B1E840B1400D06A13 /* InterfaceController.swift in Sources */,
 				426CAB7F1E840B1400D06A13 /* ComplicationController.swift in Sources */,
-				426CABD51E846E9F00D06A13 /* OPRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		421BFC3D1E85DBF50009A5E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 421BFC361E85DBF50009A5E9 /* OPRequestService */;
+			targetProxy = 421BFC3C1E85DBF50009A5E9 /* PBXContainerItemProxy */;
+		};
+		421BFC4E1E85DC170009A5E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 421BFC471E85DC170009A5E9 /* OPRequestService Watch */;
+			targetProxy = 421BFC4D1E85DC170009A5E9 /* PBXContainerItemProxy */;
+		};
 		426CAB781E840B1400D06A13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 426CAB741E840B1400D06A13 /* OrlandoParkingWatch Extension */;
@@ -580,6 +797,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		421BFC411E85DBF50009A5E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB38ED26FF71A4BC2DBDAAEB /* Pods-OPRequestService.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OPRequestService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.werureo.OPRequestService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		421BFC421E85DBF50009A5E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18FE24EC3720A748D2775E1 /* Pods-OPRequestService.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OPRequestService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.werureo.OPRequestService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		421BFC521E85DC170009A5E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 030D0E6C70E8535044A6210F /* Pods-OPRequestService Watch.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OPRequestService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.werureo.OPRequestService;
+				PRODUCT_NAME = OPRequestService;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		421BFC531E85DC170009A5E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEADB654A25CE7A2B5A0AB16 /* Pods-OPRequestService Watch.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OPRequestService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.werureo.OPRequestService;
+				PRODUCT_NAME = OPRequestService;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		426CAB501E83418500D06A13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -673,8 +994,9 @@
 		};
 		426CAB531E83418500D06A13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D217A5BF9190BC9907EFC80D /* Pods-OrlandoParking.debug.xcconfig */;
+			baseConfigurationReference = 283306A2785DA62EEACF0B6B /* Pods-OrlandoParking.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X359D924E;
 				INFOPLIST_FILE = OrlandoParking/Info.plist;
@@ -687,8 +1009,9 @@
 		};
 		426CAB541E83418500D06A13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9351396F180779218ADB50DC /* Pods-OrlandoParking.release.xcconfig */;
+			baseConfigurationReference = 8BD6147DBA4BE6AC4C9B4A03 /* Pods-OrlandoParking.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X359D924E;
 				INFOPLIST_FILE = OrlandoParking/Info.plist;
@@ -701,7 +1024,7 @@
 		};
 		426CAB871E840B1400D06A13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B4CC3FA0654E1E2ABEBC885 /* Pods-OrlandoParkingWatch Extension.debug.xcconfig */;
+			baseConfigurationReference = 2DA013E0CB03A96EEAC5E334 /* Pods-OrlandoParkingWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = 4X359D924E;
@@ -719,7 +1042,7 @@
 		};
 		426CAB881E840B1400D06A13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 317869D4AD5DA1900A93F2CE /* Pods-OrlandoParkingWatch Extension.release.xcconfig */;
+			baseConfigurationReference = D4F702DDEE18F7D13CC2FA8A /* Pods-OrlandoParkingWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = 4X359D924E;
@@ -774,6 +1097,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		421BFC401E85DBF50009A5E9 /* Build configuration list for PBXNativeTarget "OPRequestService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421BFC411E85DBF50009A5E9 /* Debug */,
+				421BFC421E85DBF50009A5E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		421BFC511E85DC170009A5E9 /* Build configuration list for PBXNativeTarget "OPRequestService Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421BFC521E85DC170009A5E9 /* Debug */,
+				421BFC531E85DC170009A5E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		426CAB3B1E83418400D06A13 /* Build configuration list for PBXProject "OrlandoParking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

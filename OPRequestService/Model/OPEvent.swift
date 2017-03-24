@@ -11,9 +11,9 @@ import SwiftyJSON
 
 public struct OPEvent
 {
-    let title: String
-    let venueName: String
-    let time: Date
+    public let title: String
+    public let venueName: String
+    public let time: Date
 
     init(json: JSON)
     {

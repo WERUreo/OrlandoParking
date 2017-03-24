@@ -51,34 +51,12 @@ public struct OPRequestManager
     private init() {}
 
     ////////////////////////////////////////////////////////////
-    // MARK: - Helper Functions
-    ////////////////////////////////////////////////////////////
-
-    private func getAPIKey() -> String?
-    {
-        var keys: NSDictionary?
-
-        if let path = Bundle.main.path(forResource: "keys", ofType: "plist")
-        {
-            keys = NSDictionary(contentsOfFile: path)
-        }
-
-        if let dict = keys
-        {
-            let apiKey = dict["seatgeek_key"] as? String
-            return apiKey
-        }
-
-        return nil
-    }
-
-    ////////////////////////////////////////////////////////////
     // MARK: - Request Functions
     ////////////////////////////////////////////////////////////
 
     public func getEvents(_ completion: @escaping OPRequestEventsComplete)
     {
-        guard let apiKey = getAPIKey() else
+        guard let apiKey = SEATGEEK_KEY else
         {
             completion(nil, OPRequestError.noAPIKey)
             return

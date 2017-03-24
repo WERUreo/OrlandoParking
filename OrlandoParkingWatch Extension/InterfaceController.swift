@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import OPRequestService
 
 class InterfaceController: WKInterfaceController
 {
@@ -34,7 +35,32 @@ class InterfaceController: WKInterfaceController
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        requestManager.getEvents
+        updateUI()
+    }
+
+    ////////////////////////////////////////////////////////////
+    
+    override func willActivate()
+    {
+        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
+    }
+
+    ////////////////////////////////////////////////////////////
+    
+    override func didDeactivate()
+    {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+    }
+
+    ////////////////////////////////////////////////////////////
+    // MARK: -
+    ////////////////////////////////////////////////////////////
+
+    func updateUI()
+    {
+        self.requestManager.getEvents
         { events, error in
             if let error = error
             {
@@ -71,30 +97,5 @@ class InterfaceController: WKInterfaceController
                 }
             }
         }
-    }
-
-    ////////////////////////////////////////////////////////////
-    
-    override func willActivate()
-    {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-
-    ////////////////////////////////////////////////////////////
-    
-    override func didDeactivate()
-    {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
-    ////////////////////////////////////////////////////////////
-    // MARK: -
-    ////////////////////////////////////////////////////////////
-
-    func updateUI()
-    {
-
     }
 }
