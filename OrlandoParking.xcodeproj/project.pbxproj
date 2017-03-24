@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421BFBDE1E855BE30009A5E9 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 421BFBDD1E855BE30009A5E9 /* keys.plist */; };
 		426CAB441E83418400D06A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB431E83418400D06A13 /* AppDelegate.swift */; };
 		426CAB461E83418400D06A13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB451E83418400D06A13 /* ViewController.swift */; };
 		426CAB491E83418400D06A13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426CAB471E83418400D06A13 /* Main.storyboard */; };
@@ -98,6 +99,7 @@
 /* Begin PBXFileReference section */
 		1B4CC3FA0654E1E2ABEBC885 /* Pods-OrlandoParkingWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParkingWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParkingWatch Extension/Pods-OrlandoParkingWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		317869D4AD5DA1900A93F2CE /* Pods-OrlandoParkingWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParkingWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParkingWatch Extension/Pods-OrlandoParkingWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		421BFBDD1E855BE30009A5E9 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = keys.plist; path = OPRequestService/keys.plist; sourceTree = SOURCE_ROOT; };
 		426CAB401E83418400D06A13 /* OrlandoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrlandoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426CAB431E83418400D06A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		426CAB451E83418400D06A13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			children = (
 				426CAB901E84110700D06A13 /* Model */,
 				426CAB8E1E840C1700D06A13 /* OPRequestManager.swift */,
+				421BFBDD1E855BE30009A5E9 /* keys.plist */,
 			);
 			name = OPRequestService;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421BFBDE1E855BE30009A5E9 /* keys.plist in Resources */,
 				426CABDA1E847EA100D06A13 /* keys.plist in Resources */,
 				426CAB4E1E83418500D06A13 /* LaunchScreen.storyboard in Resources */,
 				426CAB4B1E83418400D06A13 /* Assets.xcassets in Resources */,
