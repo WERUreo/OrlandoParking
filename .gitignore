@@ -65,3 +65,4 @@ fastlane/screenshots
 fastlane/test_output
 
 OPRequestService/keys.plist
+Assets/
