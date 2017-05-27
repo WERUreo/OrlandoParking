@@ -15,7 +15,7 @@ private let eventsRequest = "\(baseURL)/events"
 
 public typealias OPRequestEventsComplete = (_ events: [OPEvent]?, _ error: Error?) -> Void
 
-public struct OPRequestManager
+public final class OPRequestManager
 {
     ////////////////////////////////////////////////////////////
     // MARK: - Error Enum
@@ -39,10 +39,24 @@ public struct OPRequestManager
     }
 
     ////////////////////////////////////////////////////////////
+
+    public enum EventInterval
+    {
+        case today, thisWeek
+    }
+
+    ////////////////////////////////////////////////////////////
     // MARK: - Properties
     ////////////////////////////////////////////////////////////
 
     public static let shared = OPRequestManager()
+    public var eventCount = 0
+    lazy var sessionManager: Alamofire.SessionManager =
+    {
+        let configuration = URLSessionConfiguration.background(withIdentifier: "com.werureo.backgroundSession")
+        let manager = Alamofire.SessionManager(configuration: configuration)
+        return manager
+    }()
 
     ////////////////////////////////////////////////////////////
     // MARK: - Initializer
@@ -54,7 +68,7 @@ public struct OPRequestManager
     // MARK: - Request Functions
     ////////////////////////////////////////////////////////////
 
-    public func getEvents(_ completion: @escaping OPRequestEventsComplete)
+    public func getEvents(for interval: EventInterval = .today, _ completion: @escaping OPRequestEventsComplete)
     {
         guard let apiKey = SEATGEEK_KEY else
         {
@@ -62,16 +76,18 @@ public struct OPRequestManager
             return
         }
 
+        let endDate = (interval == .today) ? Date().end(of: .day) : Date().end(of: .weekOfMonth)
+
         let parameters =
         [
             "client_id" : apiKey,
             "venue.id" : "3721,2652",
             "datetime_local.gte" : Date().dateString(),
-            "datetime_local.lt" : Date().adding(.day, value: 1).dateString()
+            "datetime_local.lt" : (endDate ?? Date()).dateString()
         ]
 
-        Alamofire.request(eventsRequest, method: .get, parameters: parameters).validate().responseJSON()
-        { response in
+        self.sessionManager.request(eventsRequest, method: .get, parameters: parameters).validate().responseJSON()
+        { [weak self] response in
             if response.result.isSuccess
             {
                 guard let value = response.result.value else
@@ -89,6 +105,7 @@ public struct OPRequestManager
                     events.append(event)
                 }
 
+                self?.eventCount = events.count
                 completion(events, nil)
             }
             else

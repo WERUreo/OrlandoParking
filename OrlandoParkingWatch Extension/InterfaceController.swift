@@ -33,17 +33,14 @@ class InterfaceController: WKInterfaceController
     override func awake(withContext context: Any?)
     {
         super.awake(withContext: context)
-        
-        // Configure interface objects here.
-        updateUI()
     }
 
     ////////////////////////////////////////////////////////////
     
     override func willActivate()
     {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        updateUI()
     }
 
     ////////////////////////////////////////////////////////////
@@ -64,7 +61,7 @@ class InterfaceController: WKInterfaceController
         { events, error in
             if let error = error
             {
-                print(error)
+                print(error.localizedDescription)
             }
             else
             {
@@ -78,13 +75,13 @@ class InterfaceController: WKInterfaceController
                         self.noEventsLabel.setVerticalAlignment(.top)
                         self.table.setHidden(false)
                         self.table.setNumberOfRows(self.events.count, withRowType: "EventRow")
-                        for index in 0 ..< self.events.count
+                        for (index, event) in self.events.enumerated()
                         {
                             if let rowController = self.table.rowController(at: index) as? EventRowController
                             {
-                                rowController.eventLabel.setText(self.events[index].title)
-                                rowController.venueLabel.setText(self.events[index].venueName)
-                                rowController.timeLabel.setText(self.events[index].time.dateString(withFormat: "h:mm a"))
+                                rowController.eventLabel.setText(event.title)
+                                rowController.venueLabel.setText(event.venueName)
+                                rowController.timeLabel.setText(event.time.dateString(withFormat: "h:mm a"))
                             }
                         }
                     }

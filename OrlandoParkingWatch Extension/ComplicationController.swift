@@ -7,7 +7,7 @@
 //
 
 import ClockKit
-
+import OPRequestService
 
 class ComplicationController: NSObject, CLKComplicationDataSource
 {
@@ -26,7 +26,25 @@ class ComplicationController: NSObject, CLKComplicationDataSource
 
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void)
     {
-        handler(nil)
+        switch complication.family
+        {
+            case .modularSmall:
+                let template = CLKComplicationTemplateModularSmallStackText()
+                template.line1TextProvider = CLKSimpleTextProvider(text: "EVTS")
+                template.line2TextProvider = CLKSimpleTextProvider(text: "\(OPRequestManager.shared.eventCount)")
+
+                let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+                handler(entry)
+            case .modularLarge:
+                let template = CLKComplicationTemplateModularLargeStandardBody()
+                template.headerTextProvider = CLKSimpleTextProvider(text: "Events")
+                template.body1TextProvider = CLKSimpleTextProvider(text: "\(OPRequestManager.shared.eventCount)")
+
+                let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+                handler(entry)
+            default:
+                handler(nil)
+        }
     }
     
     ////////////////////////////////////////////////////////////
@@ -35,21 +53,22 @@ class ComplicationController: NSObject, CLKComplicationDataSource
 
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void)
     {
-        if complication.family == .modularSmall
+        switch complication.family
         {
-            let template = CLKComplicationTemplateModularSmallStackText()
-            template.line1TextProvider = CLKSimpleTextProvider(text: "Events", shortText: "EVT")
-            template.line2TextProvider = CLKSimpleTextProvider(text: "---")
+            case .modularSmall:
+                let template = CLKComplicationTemplateModularSmallStackText()
+                template.line1TextProvider = CLKSimpleTextProvider(text: "Events", shortText: "EVT")
+                template.line2TextProvider = CLKSimpleTextProvider(text: "---")
 
-            handler(template)
-        }
+                handler(template)
+            case .modularLarge:
+                let template = CLKComplicationTemplateModularLargeStandardBody()
+                template.headerTextProvider = CLKSimpleTextProvider(text: "Events")
+                template.body1TextProvider = CLKSimpleTextProvider(text: "---")
 
-        if complication.family == .modularLarge
-        {
-            let template = CLKComplicationTemplateModularLargeStandardBody()
-            template.headerTextProvider = CLKSimpleTextProvider(text: "Events")
-            template.body1TextProvider = CLKSimpleTextProvider(text: "---")
+                handler(template)
+            default:
+                handler(nil)
         }
     }
-    
 }

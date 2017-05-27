@@ -21,8 +21,10 @@
 		421BFC5A1E85E1DD0009A5E9 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB941E84208600D06A13 /* DateExtensions.swift */; };
 		421BFC5E1E85E3950009A5E9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BFC5D1E85E3950009A5E9 /* Secrets.swift */; };
 		421BFC5F1E85E3950009A5E9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BFC5D1E85E3950009A5E9 /* Secrets.swift */; };
+		426B68961EAA8A6400CE3BE3 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B68951EAA8A6400CE3BE3 /* ReusableView.swift */; };
+		426B68981EAA8AB500CE3BE3 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B68971EAA8AB500CE3BE3 /* NibLoadableView.swift */; };
+		426B689B1EAA8B4100CE3BE3 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B689A1EAA8B4100CE3BE3 /* UITableViewExtension.swift */; };
 		426CAB441E83418400D06A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB431E83418400D06A13 /* AppDelegate.swift */; };
-		426CAB461E83418400D06A13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB451E83418400D06A13 /* ViewController.swift */; };
 		426CAB491E83418400D06A13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426CAB471E83418400D06A13 /* Main.storyboard */; };
 		426CAB4B1E83418400D06A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426CAB4A1E83418400D06A13 /* Assets.xcassets */; };
 		426CAB4E1E83418500D06A13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426CAB4C1E83418500D06A13 /* LaunchScreen.storyboard */; };
@@ -35,6 +37,9 @@
 		426CAB811E840B1400D06A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426CAB801E840B1400D06A13 /* Assets.xcassets */; };
 		426CAB851E840B1400D06A13 /* OrlandoParkingWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 426CAB691E840B1400D06A13 /* OrlandoParkingWatch.app */; };
 		426CAB991E8427D900D06A13 /* EventRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CAB981E8427D900D06A13 /* EventRowController.swift */; };
+		42FD65801EA8199D0084CA4B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD657F1EA8199D0084CA4B /* MainViewController.swift */; };
+		42FD65831EA81BB70084CA4B /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD65811EA81BB70084CA4B /* EventCell.swift */; };
+		42FD65841EA81BB70084CA4B /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42FD65821EA81BB70084CA4B /* EventCell.xib */; };
 		89557132C75BE1F181981D75 /* Pods_OPRequestService_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C6BB56CDC76F243F455CE8 /* Pods_OPRequestService_Watch.framework */; };
 		8E833D98D31071CDED5140F1 /* Pods_OrlandoParkingWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39A7126456EB5AC213C8B24 /* Pods_OrlandoParkingWatch_Extension.framework */; };
 		A77F221FD2BBA5C539591D5F /* Pods_OrlandoParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA920D38B51FA28F881D33AA /* Pods_OrlandoParking.framework */; };
@@ -129,9 +134,11 @@
 		421BFC3A1E85DBF50009A5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		421BFC481E85DC170009A5E9 /* OPRequestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OPRequestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421BFC5D1E85E3950009A5E9 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		426B68951EAA8A6400CE3BE3 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReusableView.swift; path = Views/ReusableView.swift; sourceTree = "<group>"; };
+		426B68971EAA8AB500CE3BE3 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibLoadableView.swift; path = Views/NibLoadableView.swift; sourceTree = "<group>"; };
+		426B689A1EAA8B4100CE3BE3 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewExtension.swift; path = Extensions/UITableViewExtension.swift; sourceTree = "<group>"; };
 		426CAB401E83418400D06A13 /* OrlandoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrlandoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426CAB431E83418400D06A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		426CAB451E83418400D06A13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		426CAB481E83418400D06A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		426CAB4A1E83418400D06A13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		426CAB4D1E83418500D06A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,6 +157,9 @@
 		426CAB911E84111A00D06A13 /* OPEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OPEvent.swift; path = Model/OPEvent.swift; sourceTree = "<group>"; };
 		426CAB941E84208600D06A13 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtensions.swift; path = Extensions/DateExtensions.swift; sourceTree = "<group>"; };
 		426CAB981E8427D900D06A13 /* EventRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRowController.swift; sourceTree = "<group>"; };
+		42FD657F1EA8199D0084CA4B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		42FD65811EA81BB70084CA4B /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCell.swift; path = Views/EventCell.swift; sourceTree = "<group>"; };
+		42FD65821EA81BB70084CA4B /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventCell.xib; path = Views/EventCell.xib; sourceTree = "<group>"; };
 		8BD6147DBA4BE6AC4C9B4A03 /* Pods-OrlandoParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoParking.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoParking/Pods-OrlandoParking.release.xcconfig"; sourceTree = "<group>"; };
 		8F80D7A3E6F28D7BEF59C21D /* Pods_OPRequestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OPRequestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA920D38B51FA28F881D33AA /* Pods_OrlandoParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrlandoParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +239,14 @@
 			path = OPRequestService;
 			sourceTree = "<group>";
 		};
+		426B68991EAA8B2800CE3BE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				426B689A1EAA8B4100CE3BE3 /* UITableViewExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		426CAB371E83418400D06A13 = {
 			isa = PBXGroup;
 			children = (
@@ -257,8 +275,10 @@
 		426CAB421E83418400D06A13 /* OrlandoParking */ = {
 			isa = PBXGroup;
 			children = (
+				426B68991EAA8B2800CE3BE3 /* Extensions */,
+				42FD657E1EA819740084CA4B /* Controllers */,
+				42FD657D1EA8196F0084CA4B /* Views */,
 				426CAB431E83418400D06A13 /* AppDelegate.swift */,
-				426CAB451E83418400D06A13 /* ViewController.swift */,
 				426CAB471E83418400D06A13 /* Main.storyboard */,
 				426CAB4A1E83418400D06A13 /* Assets.xcassets */,
 				426CAB4C1E83418500D06A13 /* LaunchScreen.storyboard */,
@@ -304,6 +324,25 @@
 				426CAB941E84208600D06A13 /* DateExtensions.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		42FD657D1EA8196F0084CA4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42FD65811EA81BB70084CA4B /* EventCell.swift */,
+				42FD65821EA81BB70084CA4B /* EventCell.xib */,
+				426B68951EAA8A6400CE3BE3 /* ReusableView.swift */,
+				426B68971EAA8AB500CE3BE3 /* NibLoadableView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		42FD657E1EA819740084CA4B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42FD657F1EA8199D0084CA4B /* MainViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		A575D642AFCA6AD73D6E30FB /* Pods */ = {
@@ -523,6 +562,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FD65841EA81BB70084CA4B /* EventCell.xib in Resources */,
 				426CAB4E1E83418500D06A13 /* LaunchScreen.storyboard in Resources */,
 				426CAB4B1E83418400D06A13 /* Assets.xcassets in Resources */,
 				426CAB491E83418400D06A13 /* Main.storyboard in Resources */,
@@ -728,8 +768,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				426CAB461E83418400D06A13 /* ViewController.swift in Sources */,
 				426CAB441E83418400D06A13 /* AppDelegate.swift in Sources */,
+				426B68981EAA8AB500CE3BE3 /* NibLoadableView.swift in Sources */,
+				42FD65831EA81BB70084CA4B /* EventCell.swift in Sources */,
+				426B689B1EAA8B4100CE3BE3 /* UITableViewExtension.swift in Sources */,
+				42FD65801EA8199D0084CA4B /* MainViewController.swift in Sources */,
+				426B68961EAA8A6400CE3BE3 /* ReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1036,7 +1080,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -1054,7 +1098,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -1072,7 +1116,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -1090,7 +1134,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
