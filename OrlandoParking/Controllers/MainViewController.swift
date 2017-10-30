@@ -29,6 +29,7 @@ class MainViewController: UIViewController
 
     var events = [OPEvent]()
     var eventSections = [EventSection]()
+    let requestManager = OPRequestManager.shared
 
     ////////////////////////////////////////////////////////////
     // MARK: - View Controller Lifecycle
@@ -47,7 +48,10 @@ class MainViewController: UIViewController
 
     func configureTableView()
     {
-
+        self.requestManager.getEvents(for: .thisWeek)
+        { (events, error) in
+            print(events ?? "")
+        }
     }
 }
 

@@ -2,13 +2,13 @@ use_frameworks!
 
 target 'OPRequestService' do
   platform :ios, '9.0'
-  pod 'Alamofire', '~> 4.0'
+  pod 'Alamofire', '~> 4.5' 
   pod 'SwiftyJSON'
 end
 
 target 'OPRequestService Watch' do
   platform :watchos, '2.0'
-  pod 'Alamofire', '~> 4.0'
+  pod 'Alamofire', '~> 4.5' 
   pod 'SwiftyJSON'
 end
 
