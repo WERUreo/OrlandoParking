@@ -57,6 +57,7 @@ class InterfaceController: WKInterfaceController
 
     func updateUI()
     {
+        print("I am in updateUI()")
         self.requestManager.getEvents
         { events, error in
             if let error = error

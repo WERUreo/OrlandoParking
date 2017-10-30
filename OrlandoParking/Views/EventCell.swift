@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OPRequestService
 
 class EventCell: UITableViewCell
 {
@@ -18,4 +19,8 @@ class EventCell: UITableViewCell
     @IBOutlet weak var eventTitleLabel: UILabel!
     @IBOutlet weak var venueTimeLabel: UILabel!
     
+    func configure(with event: OPEvent)
+    {
+        
+    }
 }

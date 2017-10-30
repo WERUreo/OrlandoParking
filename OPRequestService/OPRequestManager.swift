@@ -70,24 +70,27 @@ public final class OPRequestManager
 
     public func getEvents(for interval: EventInterval = .today, _ completion: @escaping OPRequestEventsComplete)
     {
+        print("Just entered getEvents()")
         guard let apiKey = SEATGEEK_KEY else
         {
             completion(nil, OPRequestError.noAPIKey)
             return
         }
 
-        let endDate = (interval == .today) ? Date().end(of: .day) : Date().end(of: .weekOfMonth)
-
+//        let endDate = (interval == .today) ? Date().end(of: .day) : Date().end(of: .weekOfMonth)
+        
         let parameters =
         [
             "client_id" : apiKey,
-            "venue.id" : "3721,2652",
+            "venue.id" : "3721,2652"/*,
             "datetime_local.gte" : Date().dateString(),
-            "datetime_local.lt" : (endDate ?? Date()).dateString()
+            "datetime_local.lt" : (endDate ?? Date()).dateString()*/
         ]
-
-        self.sessionManager.request(eventsRequest, method: .get, parameters: parameters).validate().responseJSON()
+        
+        print("About to send request")
+        /*self.sessionManager*/Alamofire.request(eventsRequest, method: .get, parameters: parameters).validate().responseJSON
         { [weak self] response in
+            print("trying to get response")
             if response.result.isSuccess
             {
                 guard let value = response.result.value else
@@ -97,7 +100,7 @@ public final class OPRequestManager
                     return
                 }
 
-                var events = [OPEvent]()
+                var events = [OPEvent]()                
                 let json = JSON(value)
                 for (_, subJSON) in json["events"]
                 {
